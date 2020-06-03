@@ -2,6 +2,23 @@
 using namespace std;
 int main()
 {
-    cout<<"Hello world";
-    return 0;
+    int t;
+    cin>>t;
+    for(int i=0;i<t;i++)
+    {
+        int x,y,a,b,ans{0};
+        cin>>x>>y;
+        cin>>a>>b;
+        c=max(a,b);
+        d=min(a,b);
+        for(int i =0;i<c-d;i++)
+        {
+            ans+=a;
+        }
+        for (int i=0;i<d;i++)
+        {
+            ans+=b;
+        }
+        cout<<ans<<"\n";
+    }
 }
